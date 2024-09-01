@@ -1,0 +1,35 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Measurement Conversion</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="mainContent">
+        <div>
+            <header><h1>Measurement Conversion</h1></header>
+            <form class="calculationMap" onsubmit="calculate(event)" name="calculationMap">
+                <div class="calculationTitle">Convert Celcius to Fahrenheit</div>
+                <div class="calculationInput">
+                    <input id="inputMeasurement" type="number" placeholder="Input your measurement" name="inputNumber" step="0.01">
+                    <label for="inputMeasurement" >°C</label>
+                </div>
+                <div class="calculationButton">
+                    <button type="reset" class="button">Reset</button>
+                    <button type="submit" class="button">Submit</button>
+                </div>
+                <div class="calculationAnswer">
+                    Answer:
+                    <br>
+                    <div class="answerFormula" id="answerFormula"></div>
+                    <div class="answerCalculation" id="answerCalculation"></div>
+                </div>
+            </form>
+
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
