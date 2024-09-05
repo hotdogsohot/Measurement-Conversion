@@ -21,8 +21,8 @@ body{
     display: flex;
     justify-content: center;
 }
-.mainContent>header{
-    text-align: left;
+.mainContent>div>header{
+    text-align: center;
 }
 
 .calculationMap{
@@ -41,6 +41,21 @@ body{
     color: #47C6C2;
 
 }
+.calculationMap>.optionMeasurement{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    
+}
+.calculationMap>.optionMeasurement>.measurement{
+    padding: 5px;
+    margin: 10px ;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid green;
+    background-color: #475662;
+    color: #47C6C2;
+}
 
 .calculationMap>.calculationInput{
     display: flex;
@@ -48,6 +63,10 @@ body{
     gap: 5px;
     align-items: center;
     width: auto;
+}
+.calculationMap>.calculationInput>.unit{
+    display: flex;
+    flex-direction: column;
 }
 .calculationMap>.calculationInput>#inputMeasurement{
     padding: 5px;
@@ -77,4 +96,11 @@ body{
 
 .calculationMap>.calculationAnswer>.answerFormula{
     margin-top: 10px;
+}
+
+/* Responsive Web Design */
+@media only screen and (max-width:767px){
+    .mainContent{
+        width: 100%;
+    }
 }

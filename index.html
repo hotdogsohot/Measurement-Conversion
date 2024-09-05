@@ -10,10 +10,16 @@
         <div>
             <header><h1>Measurement Conversion</h1></header>
             <form class="calculationMap" onsubmit="calculate(event)" name="calculationMap">
-                <div class="calculationTitle">Convert Celcius to Fahrenheit</div>
+                <div class="optionMeasurement">
+                    <select id="measurement" class="measurement" onchange="handleMeasurementChange()">
+                        <option value="CtoF">Celcius to Fahrenheit</option>
+                        <option value="FtoC">Fahrenheit to Celcius</option>
+                    </select>
+                </div>
                 <div class="calculationInput">
-                    <input id="inputMeasurement" type="number" placeholder="Input your measurement" name="inputNumber" step="0.01">
-                    <label for="inputMeasurement" >°C</label>
+                    <input id="inputMeasurement" class="inputMeasurement" type="text" inputmode="numeric" placeholder="Input your measurement" name="inputNumber" step="0.01">
+                        <label for="inputMeasurement" class="inputMeasurementLabel">°C</label>
+                    
                 </div>
                 <div class="calculationButton">
                     <button type="reset" class="button">Reset</button>
